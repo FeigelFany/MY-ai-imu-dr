@@ -479,6 +479,6 @@ class KITTIArgs():
 
 if __name__ == '__main__':
     args = KITTIArgs()
-    dataset = KITTIDataset(args)
-    launch(KITTIArgs)
+    dataset = KITTIDataset(args) # useless, because dataset will be new determined in launch
+    launch(args)
 
